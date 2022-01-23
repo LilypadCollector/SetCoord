@@ -1,0 +1,38 @@
+name: SetCoord
+author: LilypadCollector
+version: 1.0
+main: dev.dannychoi.setcoord.SetCoord
+api-version: 1.18
+commands:
+  coords:
+    description: See all coords saved by a player.
+    usage: "Usage: /coords <OPTIONAL: page> <OPTIONAL: player>"
+    permission: setcoord.coords
+  coord:
+    description: See details of one specific saved coordinate.
+    usage: "Usage: /coord <name> <OPTIONAL: player>"
+    permission: setcoord.coord
+  setcoord:
+    description: Sets a player's current set of coordinates to the given name.
+    usage: "Usage: /setcoord <name>"
+    permission: setcoord.setcoord
+  delcoord:
+    description: Remove specified coordinate from the player's list.
+    usage: "Usage: /delcoord <name>"
+    permission: setcoord.delcoord
+  globalcoords:
+    description: See all global coordinates from the server's coordinates list.
+    usage: "Usage: /globalcoords <OPTIONAL: page>"
+    permission: setcoord.globalcoords
+  globalcoord:
+    description: See details of one specific saved global coordinate.
+    usage: "Usage: /globalcoord <name>"
+    permission: setcoord.globalcoord
+  setglobalcoord:
+    description: Assigns the player's coordinates to a name for the server's coordinates list.
+    usage: "Usage: /setglobalcoord <name>"
+    permission: setcoord.setglobalcoord
+  delglobalcoord:
+    description: Deletes a global coordinate from the server's coordinates list.
+    usage: "Usage: /delglobalcoord <name>"
+    permission: setcoord.delglobalcoord
