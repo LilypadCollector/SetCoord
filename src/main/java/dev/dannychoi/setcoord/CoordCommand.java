@@ -56,6 +56,7 @@ public class CoordCommand implements CommandExecutor {
 
         sender.sendMessage(ChatColor.GOLD + "Name: " + ChatColor.WHITE + coordName);
         sender.sendMessage(ChatColor.GOLD + "Coordinates: " + ChatColor.WHITE + coordinates);
+        sender.sendMessage(ChatColor.GOLD + "World: " + ChatColor.WHITE + location.getWorld().getName());
         sender.sendMessage(ChatColor.GOLD + "Created by: " + ChatColor.WHITE + creatorName);
 
         return true;
